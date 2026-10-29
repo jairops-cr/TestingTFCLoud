@@ -3,7 +3,7 @@ terraform {
 }
 
 resource "terraform_data" "echo_example" {
-  count = 20
+  count = 25
 
   provisioner "local-exec" {
     command = "echo 'Hello from Terraform - iteration ${count.index + 1}'"
